@@ -63,6 +63,7 @@ module.exports = function(fn) {
   // to the native rAF function
   return raf.call(root, fn)
 }
+module.exports.request = module.exports
 module.exports.cancel = function() {
   caf.apply(root, arguments)
 }
